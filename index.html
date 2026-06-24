@@ -69,28 +69,30 @@
       min-height: 100vh;
       display: flex;
       justify-content: center;
-      padding: 2rem 1rem;
+      padding: 2rem 0.5rem;
     }
 
-    /* full-width container – gray overlay background */
+    /* FULL-WIDTH container – gray overlay, no max-width restriction */
     .article-container {
-      max-width: 1200px;  /* wider, full-width feel */
       width: 100%;
+      max-width: 1400px;  /* full width with some breathing room */
       background: #eaeaea;  /* gray overlay */
-      padding: 2.5rem 3.5rem;
+      padding: 2.5rem 4rem;
       border-radius: 40px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 6px 12px rgba(0,0,0,0.3);
       transition: 0.2s;
+      margin: 0 0.5rem;
     }
 
     /* inner content */
     .article-content {
       background: transparent;
+      width: 100%;
     }
 
     /* headings with border & UI color */
     h1 {
-      font-size: 2.7rem;
+      font-size: 2.8rem;
       font-weight: 700;
       letter-spacing: -0.5px;
       color: #b45f2b;
@@ -102,24 +104,24 @@
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 2.1rem;
       font-weight: 600;
       color: #a3511f;
       border-bottom: 3px solid #d97d3a;
       padding-bottom: 0.4rem;
-      margin-top: 3rem;    /* extra gap above headings */
+      margin-top: 3.2rem;    /* extra gap above headings */
       margin-bottom: 1.2rem;
       border-left: 8px solid #d97d3a;
       padding-left: 1.2rem;
     }
 
     h3 {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
       font-weight: 600;
       color: #7a3f1a;
       border-left: 6px solid #d97d3a;
       padding-left: 1.2rem;
-      margin-top: 2.6rem;
+      margin-top: 2.8rem;
       margin-bottom: 0.8rem;
     }
 
@@ -127,6 +129,7 @@
       margin-bottom: 1.5rem;
       font-size: 1.08rem;
       color: #1f1f1f;
+      line-height: 1.8;
     }
 
     /* images - full width, responsive */
@@ -196,21 +199,22 @@
     }
 
     /* responsive */
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       .article-container {
-        padding: 1.8rem 1.2rem;
+        padding: 1.8rem 1.5rem;
         border-radius: 28px;
+        margin: 0 0.2rem;
       }
       h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         padding-left: 1rem;
       }
       h2 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         padding-left: 1rem;
       }
       h3 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         padding-left: 1rem;
       }
       .logo-bar {
@@ -218,6 +222,24 @@
       }
       .logo-bar img {
         height: 40px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .article-container {
+        padding: 1.2rem 0.8rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 1rem;
       }
     }
 
@@ -314,6 +336,18 @@
       </p>
       <p>
         From juicy burgers to smoky ribs, from tangy slaw to creamy milkshakes, every component tells a story. And with a little planning, your cookout menu can become the stuff of legend among your friends and family. So fire up the grill, prep your sides, and get ready to host the summer’s most memorable feast.
+      </p>
+      <p>
+        One of the greatest joys of hosting a cookout is the flexibility it offers. You can go all out with a full smoked brisket and gourmet sides, or keep it simple with perfectly grilled hot dogs and classic potato salad. The key is to choose items that you’re comfortable preparing and that will delight your guests. Remember, the best cookout menu is one that brings people together and creates a sense of community around the table.
+      </p>
+      <p>
+        For those looking to add a unique twist, consider incorporating global flavors into your cookout menu. Korean-style bulgogi burgers, Mexican-inspired elote (grilled corn with crema and chili), or Mediterranean lamb kebabs with tzatziki sauce can introduce exciting new tastes while still honoring the spirit of outdoor grilling. These fusion ideas can turn a standard barbecue into a culinary adventure.
+      </p>
+      <p>
+        Another essential element of any great cookout menu is the timing of your dishes. Plan your grilling schedule so that everything comes together at once. Start with items that take longer, like whole chickens or large roasts, and finish with quick-cooking items like burgers, hot dogs, and vegetables. This ensures that all your food is hot and ready to serve simultaneously, making for a seamless dining experience.
+      </p>
+      <p>
+        Don’t forget about leftovers! A well-planned cookout menu often yields delicious leftovers that can be repurposed into new meals. Smoked brisket makes incredible sandwiches the next day, and leftover grilled vegetables can be tossed into salads or omelets. Embrace the abundance and enjoy the fruits of your grilling labor for days to come.
       </p>
 
       <p style="margin-top: 2.2rem; font-weight: 500; border-top: 2px solid #d97d3a; padding-top: 1.4rem; color: #3d3d3d;">
